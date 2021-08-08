@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 10px 10px 0 10px;
+}
+
+
+html, body {
+    background-color: powderblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:100;
+    margin: 0;
+}
+
+header {
+    display:flexbox;
+    padding: 60px;
+    text-align: left;
+    background: teal;
+    color: white;
+    font-size: 80px;
+}
+
+.menu {
+    float:right;
+    text-align:right;
+    top: 0;
+    width: 100%;
+    padding: 60px;
+    font-size: 80px;
+    justify-content:space-around;;
+
+}
+
+main {
+    display: block;
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+img .a {
+    position: absolute;
+    max-width:fit-content;
+}
+
+.menu {
+    display:flex;
+    color: white;
+    font-size: 55px;
+    font-weight:inherit;
+    text-decoration: none;
+    float:right;
+    justify-content:space-evenly;
+    list-style-type: none;
+    min-width: 350px;
+}
+
+a { text-decoration: none; }
+
+
+.menu a:hover {
+    color: skyblue;
+}
+
+aside {
+    margin-top: 5px;
+    margin-left: 5px;
+    float:left;
+    background-color:white;
+    padding: 30px;
+    
+    list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+    background-color: powderblue;
+}
+
+p {
+    text-align: center;
+    font-size: 80px;
+}
+
+.portfolio {
+    display:block;
+    line-height: 1000px;
+    float: inline-start;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    font-size: 55px;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        display: block;
+    }
+
+    .menu {
+        align-items:baseline;     
+        flex-wrap: nowrap;
+    }
+
+    aside {
+        display:block;
+    }
+}
