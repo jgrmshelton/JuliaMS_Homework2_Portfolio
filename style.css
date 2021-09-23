@@ -1,51 +1,48 @@
 * {
     box-sizing: border-box;
-    margin: 10px 10px 10px 10px;
 }
 
 
 body {
     background: powderblue;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height:100;
-    margin: 0%;
 }
 
 header {
-    position: relative;
-    padding-top: 50px;
-    background: teal;
+    background-color:teal;
+    padding: 30px;
+    text-align: center;
+    font-size: 200px;
     color: white;
-    font-size: 500px;
 }
 
-nav {
-    flex:auto;
-    background: teal;
-    top: 0;
-    width: 100%;
-    font-size: 500px;
-    justify-content:space-around;
-}
-
-main {
+section {
     display: block;
 }
 
-.menu {
-    display:flex;
-    color: white;
+nav {
+    background-color:teal;
+    width: 100%;
+    height: 100%;
     font-size: 80px;
-    font-weight:inherit;
-    text-decoration: none;
-    float:right;
-    justify-content:space-evenly;
-    list-style-type: none;
-    min-width: 350px;
+    justify-content: center;
+    display:flex;
 }
 
 a { 
     text-decoration:none;
+}
+
+
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    background: teal;
 }
 
 
@@ -55,7 +52,7 @@ a {
 
 .a {
     text-align: center;
-    font-size: 80px;
+    font-size: 200px;
     background-color: powderblue;
     font-weight: bolder;
 }
@@ -72,7 +69,6 @@ a {
     color: black;
 }
 
-
 .name {
     text-align: center;
     font-size: 110px;
@@ -86,26 +82,6 @@ a {
     overflow:hidden;
 }
 
-.footer {
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    background-color: teal;
-    color: white;
-    font-size: 55px;
-}
-
-@media screen and (min-width: 700px) {
-    .top {
-        position:fixed;
-    }
-
-    .menu {
-        display:flex;
-        margin-left: auto;
-        margin-right:auto;
-        align-items:baseline;     
-        flex-wrap: nowrap;
-    }
+@media screen and (min-width: 2000px) {
 
 }
