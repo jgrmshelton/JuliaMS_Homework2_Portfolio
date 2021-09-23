@@ -29,10 +29,6 @@ nav {
     display:flex;
 }
 
-a { 
-    text-decoration:none;
-}
-
 
 footer {
     position:absolute;
